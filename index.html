@@ -115,6 +115,9 @@ h2::after { content: ""; flex: 1; height: 4px; border-radius: 4px; background: r
   padding: 4px 16px;
   list-style: none; margin: 0;
 }
+.item.pic { display: grid; grid-template-columns: 68px minmax(0, 1fr); column-gap: 14px; align-items: center; }
+.item.pic > :not(.thumb) { grid-column: 2; }
+.thumb { grid-row: 1 / span 3; width: 68px; height: 68px; border-radius: 14px; object-fit: cover; background: var(--line); }
 .item { padding: 14px 0; border-bottom: 2px dotted var(--line); }
 .item:last-child { border-bottom: 0; }
 .row { display: flex; align-items: baseline; gap: 10px; }
@@ -200,20 +203,25 @@ footer h3 { margin: 0; font-family: var(--script); font-weight: 400; font-size: 
 
     <section id="rice">
       <h2>Rice Dishes</h2>      <ul class="list">
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/fried-rice-chicken.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Fried Rice &amp; Chicken</span><span class="dots"></span><span class="price"><small>GH₵</small>40</span></div>
         </li>
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/fried-rice-2-chicken.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Fried Rice &amp; 2 Chicken</span><span class="dots"></span><span class="price"><small>GH₵</small>70</span></div>
           <p class="note">Double chicken for the hungry ones</p>
         </li>
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/jollof.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Jollof</span><span class="dots"></span><span class="price"><small>GH₵</small>40</span></div>
         </li>
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/jollof.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Assorted Jollof</span><span class="dots"></span><span class="price"><small>GH₵</small>65</span></div>
         </li>
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/assorted-fried-rice.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Assorted Fried Rice</span></div>
           <div class="sizes">
             <div class="size"><b>Regular</b><span><small>GH₵</small>65</span></div>
@@ -225,7 +233,8 @@ footer h3 { margin: 0; font-family: var(--script); font-weight: 400; font-size: 
 
     <section id="shawarma">
       <h2>Shawarma</h2>      <ul class="list">
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/shawarma.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Chicken Shawarma</span></div>
           <div class="sizes">
             <div class="size"><b>Small</b><span><small>GH₵</small>50</span></div>
@@ -246,7 +255,8 @@ footer h3 { margin: 0; font-family: var(--script); font-weight: 400; font-size: 
     <section id="sides">
       <h2>Sides</h2>
       <ul class="list">
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/loaded-fries.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Loaded Fries</span><span class="dots"></span><span class="price"><small>GH₵</small>100</span></div>
         </li>
       </ul>
@@ -254,24 +264,30 @@ footer h3 { margin: 0; font-family: var(--script); font-weight: 400; font-size: 
 
     <section id="drinks" class="fresh">
       <h2>Smoothies &amp; Drinks</h2>      <ul class="list">
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/smoothie.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Smoothies</span><span class="dots"></span><span class="price"><small>GH₵</small>30 – 50</span></div>
           <p class="note">Price depends on the fruit and size</p>
         </li>
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/all-fruits.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">All Fruits Smoothie</span><span class="dots"></span><span class="price"><small>GH₵</small>70</span></div>
           <p class="note">Every fruit we have, in one cup</p>
         </li>
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/juice.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Juices</span><span class="dots"></span><span class="price"><small>GH₵</small>30</span></div>
         </li>
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/sobolo.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Sobolo</span><span class="dots"></span><span class="price"><small>GH₵</small>10</span></div>
         </li>
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/beetroot-sobolo.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Beetroot Sobolo</span><span class="dots"></span><span class="price"><small>GH₵</small>15</span></div>
         </li>
-        <li class="item">
+        <li class="item pic">
+          <img class="thumb" src="img/coconut.jpg" alt="" loading="lazy">
           <div class="row"><span class="name">Fresh Coconut</span></div>
           <div class="sizes">
             <div class="size"><b>Coconut</b><span><small>GH₵</small>10</span></div>
