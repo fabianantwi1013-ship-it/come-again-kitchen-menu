@@ -67,6 +67,12 @@ body::before {
   margin: 10px 0 0 1.6em;
   text-shadow: 0 2px 0 #fff;
 }
+.brand {
+  display: block; margin: 0 auto;
+  width: min(220px, 60vw); height: auto; aspect-ratio: 1; max-width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5px var(--chili), 0 12px 26px rgba(143, 12, 18, .3);
+}
 .tag {
   margin: 22px 0 0;
   font-family: var(--display);
@@ -172,11 +178,7 @@ footer h3 { margin: 0; font-family: var(--script); font-weight: 400; font-size: 
 
 <header class="mast">
   <div class="wrap">
-    <div class="logo" role="img" aria-label="Come Again Kitchen">
-      <span class="l1">Come</span>
-      <span class="l2">Again</span>
-      <span class="l3">Kitchen</span>
-    </div>
+    <img class="brand" src="img/logo.jpg" alt="Come Again Kitchen" width="220" height="220">
     <p class="tag">Our menu · Achimota Mile 7</p>
   </div>
   <svg class="wave" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true">
